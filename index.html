@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coleman Incorporation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section with Logo and Hero Text -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Coleman Incorporation Logo">
+        </div>
+        <div class="hero">
+            <p>Where Investment Meets Innovation.</p>
+            <a href="#services" class="cta-button">Current Ventures</a>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2>About Us</h2>
+            
+            <p class="about-paragraph"><strong>Transforming the Real Estate Market</strong></p>
+            <p class="about-paragraph">At Coleman Incorporation, we are committed to shaping the future of real estate, blockchain, and technology. Our vision is to revolutionise the property market by making investment more accessible, liquid, and affordable for all.</p>
+            
+            <p class="about-paragraph">Through innovative tokenised real estate solutions, we aim to break down traditional barriers and create a new era where property ownership is democratised and fully tradable on the blockchain.</p>
+
+            <p class="about-paragraph"><strong>Breaking Barriers for Working-Class Investors</strong></p>
+            <p class="about-paragraph">One of our key goals is to remove the obstacles that have traditionally excluded working-class individuals from investing in real estate, one of the most valuable asset classes. By lowering the barriers to entry, we are enabling people to invest in property with whatever they can afford, providing access to a historically exclusive market.</p>
+
+            <p class="about-paragraph"><strong>Investing in Crypto Adoption</strong></p>
+            <p class="about-paragraph">Beyond real estate, we are investing in critical infrastructure for mass crypto adoption. Our focus on <strong>Know Your Customer (KYC)</strong> and on-ramping solutions ensures that cryptocurrency becomes accessible and secure for everyone.</p>
+            
+            <p class="about-paragraph"><strong>Skin Project: Innovation in Skincare</strong></p>
+            <p class="about-paragraph">Coleman Incorporation is also committed to diversification. Our <strong>Skin Project</strong> represents our move into advanced skincare solutions. Combining cutting-edge technology with deep industry expertise, the Skin Project is set to transform how we approach skincare, offering innovative solutions that meet modern needs.</p>
+            
+            <p class="about-paragraph">By investing in disruptive technologies across these industries, Coleman Incorporation is leading the way towards a more innovative, inclusive, and connected future.</p>
+        </div>
+    </section>
+
+    <!-- Investor Contact Form Section -->
+    <section id="investors" class="section investors">
+        <div class="container">
+            <h2>Investor Contact Form</h2>
+            <p>If you're interested in investing, please fill out the form below and let us know your details.</p>
+
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="investor-type">What type of investor are you?</label>
+                    <select id="investor-type" name="investor-type" required>
+                        <option value="individual-investor">Individual Investor</option>
+                        <option value="institutional-investor">Institutional Investor</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact">Contact Number</label>
+                    <input type="tel" id="contact" name="contact" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="investment">Investment Capital</label>
+                    <select id="investment" name="investment" required>
+                        <option value="0-10k">£0 - £10k</option>
+                        <option value="10-25k">£10k - £25k</option>
+                        <option value="25-100k">£25k - £100k</option>
+                        <option value="100-500k">£100k - £500k</option>
+                        <option value="500k-1m">£500k - £1m+</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="cta-button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- The Future We’re Building Section -->
+    <section id="future" class="section future">
+        <div class="container">
+            <h2>The Future We’re Building</h2>
+            <p>At Coleman Incorporation, we are focused on creating a future where industries are more accessible, connected, and innovative. Below are the ventures that form the foundation of this future, each contributing to a groundbreaking shift in its industry.</p>
+            
+            <!-- Company Overviews -->
+            <div class="company-overviews">
+                <!-- Block Property -->
+                <div class="company-overview">
+                    <img src="block_property.png" alt="Block Property Logo">
+                    <h3>Block Property</h3>
+                    <p>Tokenising real estate assets to make property investment more accessible, liquid, and tradable for all.</p>
+                </div>
+
+                <!-- Doxxed -->
+                <div class="company-overview">
+                    <img src="doxxed.png" alt="Doxxed Logo">
+                    <h3>Doxxed</h3>
+                    <p>Providing advanced KYC solutions for blockchain platforms, ensuring security and compliance for mass adoption.</p>
+                </div>
+
+                <!-- Token Access Point (TAP) -->
+                <div class="company-overview">
+                    <img src="Tap.png" alt="Token Access Point Logo">
+                    <h3>Token Access Point (TAP)</h3>
+                    <p>Streamlining fiat-to-crypto conversions, making it easy for individuals and institutions to enter the world of digital assets.</p>
+                </div>
+
+                <!-- LandLock -->
+                <div class="company-overview">
+                    <img src="Land_lock.png" alt="LandLock Logo">
+                    <h3>LandLock</h3>
+                    <p>Securing property deeds on the blockchain, providing a seamless and transparent way to manage real estate ownership.</p>
+                </div>
+
+                <!-- Skin Project -->
+                <div class="company-overview">
+                    <img src="skin_project.png" alt="Skin Project Logo">
+                    <h3>Skin Project</h3>
+                    <p>Leveraging cutting-edge technology to deliver innovative skincare solutions that meet modern needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Coleman Incorporation. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript to handle scroll animations for About Us -->
+    <script>
+        // Detect if a section is in the viewport
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+            );
+        }
+
+        // Add 'show' class when paragraph is in view
+        function showParagraphsOnScroll() {
+            const paragraphs = document.querySelectorAll('.about-paragraph');
+            paragraphs.forEach(paragraph => {
+                if (isInViewport(paragraph)) {
+                    paragraph.classList.add('show');
+                }
+            });
+        }
+
+        // Event listener for scrolling
+        window.addEventListener('scroll', showParagraphsOnScroll);
+        window.addEventListener('load', showParagraphsOnScroll); // Run it when page loads as well
+    </script>
+
+</body>
+</html>
