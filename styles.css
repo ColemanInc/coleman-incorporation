@@ -18,7 +18,7 @@ header {
 .logo img {
     display: block;
     margin: 0 auto;
-    max-width: 300px;
+    max-width: 1000px;
     margin-bottom: 20px;
 }
 
@@ -28,11 +28,11 @@ header {
     font-weight: bold;
     letter-spacing: 1px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    color: #f39c12;
+    color: #ffffff;
 }
 
 .cta-button {
-    background-color: #f39c12;
+    background-color: #2C3E50;
     color: white;
     padding: 15px 30px;
     text-decoration: none;
@@ -42,28 +42,26 @@ header {
 }
 
 .cta-button:hover {
-    background-color: #e67e22;
+    background-color: #2C3E50;
 }
 
 /* About Us Section */
+/* About Us Section */
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centers content horizontally */
+    text-align: center; /* Centers the text */
+    padding: 50px 20px;
+}
+
 .about p {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 20px;
 }
 
-.about h2 {
-    font-size: 2.5rem;
-    color: #34495E;
-    margin-bottom: 30px;
-}
-
-.about p strong {
-    display: block;
-    font-size: 1.3rem;
-    color: #f39c12;
-    margin-bottom: 10px;
-}
 
 /* The Future We’re Building Section */
 .future {
@@ -101,10 +99,10 @@ header {
 }
 
 .company-overview img {
-    width: 150px; /* Set logo width */
-    height: auto;
-    object-fit: contain;
-    margin-bottom: 15px;
+    width: 250px; /* Set a consistent width */
+    height: 250px; /* Set a consistent height */
+    object-fit: contain; /* Ensures the image scales properly */
+    margin-bottom: 30px;
 }
 
 .company-overview h3 {
@@ -175,7 +173,7 @@ header {
 }
 
 .investors button.cta-button {
-    background-color: #f39c12;
+    background-color: #2C3E50;
     color: white;
     padding: 15px 30px;
     text-decoration: none;
@@ -186,5 +184,38 @@ header {
 }
 
 .investors button.cta-button:hover {
-    background-color: #e67e22;
+    background-color:#2C3E50;
+}
+/* General Logo Styling */
+.company-overview img {
+    width: 300px; /* Default width for other logos */
+    height: 300px; /* Default height for other logos */
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* Special Styling for the TAP logo */
+.tap-logo {
+    width: 300px; /* Slightly larger width for TAP */
+    height: 300px; /* Slightly larger height for TAP */
+}
+/* Media Query for screens smaller than 768px (tablets and mobile) */
+@media (max-width: 768px) {
+    .company-overviews {
+        grid-template-columns: 1fr; /* Stack logos vertically on small screens */
+        gap: 20px; /* Reduce the gap between logos */
+    }
+
+    .company-overview img {
+        width: 120px; /* Reduce logo size on smaller screens */
+        height: 120px;
+    }
+
+    .hero p {
+        font-size: 1.2rem; /* Adjust font size for hero text */
+    }
+
+    .cta-button {
+        padding: 10px 20px; /* Adjust button size */
+    }
 }
